@@ -14,7 +14,7 @@
 			<TabControl.Background>
 				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 					<GradientStop Color="#FF310909"/>
-					<GradientStop Color="#FFE20909" Offset="1"/>
+					<GradientStop Color="#FF792075" Offset="1"/>
 				</LinearGradientBrush>
 			</TabControl.Background>
 
@@ -23,7 +23,14 @@
 
 			<TabItem Header="Security">
 				<!-- Сторінка з текстом, яка буде показуватись при обиранні пункту в меню -->
-				<TextBlock TextAlignment="Center" Padding="8,30" Foreground="White" FontSize="27" TextWrapping="Wrap" FontFamily="font\#Rubik Glitch" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<TextBlock TextAlignment="Center" Padding="8,30" Foreground="White" FontSize="27" TextWrapping="Wrap"  FontFamily="font\#Rubik Glitch" HorizontalAlignment="Center" VerticalAlignment="Center">
+					<!--Створення "світіння" тексту-->
+					<TextBlock.Effect>
+						<DropShadowEffect Color="Yellow"
+						  BlurRadius="10"
+						  ShadowDepth="0"
+						  Opacity="0.5" />
+					</TextBlock.Effect>
 					Two yellow eyes are looking at you from the pirate bay...
 				</TextBlock>
 			</TabItem>
